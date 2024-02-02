@@ -10,13 +10,21 @@ https://code.visualstudio.com/docs/devcontainers/containers#_create-a-devcontain
 1. よしなに開発
 
 ## その他
+- poetry
+  - ライブラリの管理はpoetryが良さげ
+  - https://python-poetry.org/docs/
+  - 必要に応じて`poetry add`してく
+
 - test
+  - テストはpytest？
   - `poetry run python -m pytest`
 
 - lint/format
+  - Ruffだけで[PEP8準拠のルール](https://docs.astral.sh/ruff/rules/#pycodestyle-e-w)とか[isort](https://docs.astral.sh/ruff/rules/#isort-i)のルール、その他たくさんやってくれる
   - 拡張にRuff入れてるから明示的に走らせる必要はないはず
   - `poetry run ruff check`
   - `poetry run ruff format`
+
 
 ## Tips
 - vscodeの拡張まで一緒に配布できるので便利かも
